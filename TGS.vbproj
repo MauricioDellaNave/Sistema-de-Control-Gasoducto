@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70C2AC58-1856-47D8-9941-319ED9580242}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TGS_Software.FrmPrincipal</StartupObject>
+    <RootNamespace>TGS_Software</RootNamespace>
+    <AssemblyName>TGS Software</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>2AC76CE7-3E8C-402d-85E7-AE9C98D7B6BA</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>TGS App</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows Mobile 6.5.3 Professional DTK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>tgs.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>TGS Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>TGS Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archivos.vb" />
+    <Compile Include="Datos.vb" />
+    <Compile Include="Encriptar.vb" />
+    <Compile Include="FrmAgregarAceite.Designer.vb">
+      <DependentUpon>FrmAgregarAceite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarAceite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClave.Designer.vb">
+      <DependentUpon>FrmClave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCodigo.Designer.vb">
+      <DependentUpon>FrmCodigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCodigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfig.Designer.vb">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatos.Designer.vb">
+      <DependentUpon>FrmDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosPC.Designer.vb">
+      <DependentUpon>FrmDatosPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstados.Designer.vb">
+      <DependentUpon>FrmEstados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHora.Designer.vb">
+      <DependentUpon>FrmHora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmObservaciones.Designer.vb">
+      <DependentUpon>FrmObservaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObservaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperadores.Designer.vb">
+      <DependentUpon>FrmOperadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalida.Designer.vb">
+      <DependentUpon>FrmSalida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalir.Designer.vb">
+      <DependentUpon>FrmSalir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupervisor.Designer.vb">
+      <DependentUpon>FrmSupervisor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupervisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTeclado.Designer.vb">
+      <DependentUpon>FrmTeclado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTeclado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.vb" />
+    <Compile Include="Planilla.vb" />
+    <Compile Include="Planta.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAgregarAceite.resx">
+      <DependentUpon>FrmAgregarAceite.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClave.resx">
+      <DependentUpon>FrmClave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCodigo.resx">
+      <DependentUpon>FrmCodigo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfig.resx">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatos.resx">
+      <DependentUpon>FrmDatos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosPC.resx">
+      <DependentUpon>FrmDatosPC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstados.resx">
+      <DependentUpon>FrmEstados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHora.resx">
+      <DependentUpon>FrmHora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmObservaciones.resx">
+      <DependentUpon>FrmObservaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperadores.resx">
+      <DependentUpon>FrmOperadores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalida.resx">
+      <DependentUpon>FrmSalida.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalir.resx">
+      <DependentUpon>FrmSalir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupervisor.resx">
+      <DependentUpon>FrmSupervisor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTeclado.resx">
+      <DependentUpon>FrmTeclado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tgs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
